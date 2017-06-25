@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7e0e0"
+    tools:context="com.htic.amar.kiosk.Result">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/header_logo" />
+
+
+
+        <TableRow
+            android:layout_marginTop="15dp"
+            android:id="@+id/tabla_cabecera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/tabla_cuerpo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:text="MEASUREMENTS"
+                        android:textAlignment="center"
+                        android:textColor="#590000"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="22dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:text="RESULT"
+                        android:textAlignment="center"
+                        android:textColor="#590000"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="22dp"
+                        android:textStyle="bold"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:text="AADHAAR NO"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <TextView
+                        android:id="@+id/aadharresult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColor="#000000"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:text="BLOOD_PRESSURE"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <TextView
+                        android:id="@+id/bpresult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:text="SPO2"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <TextView
+                        android:id="@+id/spo2result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:text="HEART_RATE"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/hrresult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:text="TEMPERATURE"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/tempresult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:text="WEIGHT"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/wresult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:text="HEIGHT"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/hresult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/tableborder"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+                </TableRow>
+
+            </TableLayout>
+        </TableRow>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@drawable/shape"
+            android:text="HISTORY"
+
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:background="@drawable/shape"
+            android:text="EXIT"
+
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

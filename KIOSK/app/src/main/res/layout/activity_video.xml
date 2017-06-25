@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.htic.amar.kiosk.VideoActivity"
+    android:orientation="vertical"
+    >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill_horizontal"
+            android:layout_weight="2.35">
+
+            <VideoView
+                android:id="@+id/videoview"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                 />
+
+        </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/Downbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reload"
+            android:text="RELOAD"
+            android:background="@drawable/shape"
+            android:textColor="@android:color/white"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            />
+
+
+        <Button
+            android:id="@+id/next"
+            android:text="NEXT"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/shape"
+            android:textColor="@android:color/white"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+           />
+
+    </LinearLayout>
+
+
+</LinearLayout>
